@@ -1,0 +1,146 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    clear: both;
+    gap: 15%;
+    }
+    
+
+    .about-me {        
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+    );
+    display: grid;
+    place-items: center; 
+    transition: 1s;
+    border: 3px solid transparent;      
+    }
+
+    .about-me-image img{
+        /* overflow: hidden; */
+        transform: rotate(15deg);
+        border-radius: 40%;
+        transition: .85s;   
+    }  
+    .about-me-image img:hover{
+        transition: .5s;      
+        transform: rotate(0);
+    }       
+    /* === right side === */
+
+    .about-cards{
+        display: flex;
+        grid-template-columns: repeat (3, 1fr);
+        gap: 1.5rem;
+        margin: 20px 0;
+        }
+        
+        .about-card{
+            background: var(--color-bg-variant);
+            border: 3px solid transparent;
+            border-radius: 1rem;
+            padding: 1rem 3rem;
+            text-align: center;
+            transition: .5s;            
+            border: 3px solid var(--color-primary);   
+        }
+        .about-card:hover{
+            transition: .25s;  
+            background: transparent;
+            border: 3px solid var(--color-bg-variant);
+        }          
+        .about-icon {
+            color: var(--color-primary);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            }
+            .about-card h5 {
+                font-size: 0.95rem;
+                }
+                .about-card small {
+                font-size: 0.7rem;
+                color: var(--color-light);
+                }
+                
+                .about-content p{
+                    margin: 2rem 3rem;
+                    color: var(--color-light);
+                    }
+                    
+            .about-content a{
+                margin: 0 40% 20px 40%;
+            }
+
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ================================== */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about{
+        margin-top: 15rem;
+    }
+        .about-me{
+        width: 50%;
+        margin: 2rem auto 4rem;
+        }
+        .about-cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            }
+        .about-card{
+            margin:1rem auto;            
+            padding: 1rem 4%;
+            }
+            .about-content a{
+                margin: 0 40%;
+            }
+
+}
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ================================== */
+@media screen and (max-width: 600px) {
+   
+    .about{
+        margin-top: 15rem;
+    }
+    .about-cards{
+        display: flex;
+        flex-direction: column;
+        }
+        .about-card{
+            padding: 1rem 30%;
+            margin: 1rem auto;
+            }
+            .about-content a{
+                margin: 0 35%;
+            }
+}
+
+
+/* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ================================== */
+@media screen and (max-width: 400px) {
+   
+    .about-me{
+        width: 90%;
+        margin: 2rem auto 4rem;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+

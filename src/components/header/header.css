@@ -1,0 +1,144 @@
+header{
+    height: 100vh;
+    padding-top: 1rem;
+    /* overflow: hidden; */
+  }
+  .header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+  }
+  .sym{
+    display:inline;
+    font-size:100%;
+    color: var(--color-primary);
+    font-family: 'Square Peg';
+  }
+
+
+/* ============================CTA================================== */
+
+  .cta {
+    margin-top: 2.5rem;
+     display: flex;
+     gap: 2rem;
+     justify-content: center;
+  }
+  
+  /* ============================ post ================================== */
+.post{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+}
+
+
+  /* ============================Socials================================== */
+
+  .header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: fixed;
+    left: 2rem;
+    bottom: auto;
+   }
+   
+   .header_socials a{
+       position: relative;
+    font-size: 1.5em;
+    margin:0px 30px;
+    transition: ease-in-out .75s;
+   }
+   .header_socials a:hover{
+    font-size: 3em;
+    transition: ease-in-out 0.25s;
+   }
+
+   .header_socials::after {
+    content: "";
+    width: 3px;
+    height: 3rem;
+    background: var(--color-primary);
+    }
+    
+
+  /* ============================  me ================================== */
+  .me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+  }  
+  
+  /* ============================ scroll down ================================== */
+
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+.scroll_down {
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    margin-bottom:15px;
+  }
+}
+
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ================================== */
+@media screen and (max-width: 1024px) {
+    header{
+        height:68vh;
+        
+    }
+    .header_socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      position: fixed;
+      left: -1rem;
+      bottom: auto;
+     }
+}
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ================================== */
+@media screen and (max-width: 600px) {
+    .header_socials, .scroll_down{
+        display: none;
+    }
+
+}
+
+
+
+/* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ================================== */
+@media screen and (max-width: 400px) {
+   
+    .myname{
+      font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
