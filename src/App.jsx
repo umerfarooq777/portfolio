@@ -8,6 +8,8 @@ import Experiance from './components/experiance/experiance';
 import Portfolio from './components/portfolio/portfolio';
 import Footer from './components/footer/footer';
 import Cursor from './components/animations/mouse/pointer';
+import Fade from 'react-reveal/Fade';
+
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
         <About/>
         <Contact/>
         <Experiance/>
-        <Portfolio/>
+        <Fade left cascade><Portfolio/></Fade>
         <Footer/> 
         
      

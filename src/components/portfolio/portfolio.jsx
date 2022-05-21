@@ -2,7 +2,7 @@ import React,{useState, useEffect} from'react'
 import './portfolio.css'
 import IMG1 from '../../assets/image/portfolio1.jpg'
 import axios from 'axios'
-import {AiFillHtml5, DiJava, IoLogoJavascript} from 'react-icons/si'
+import Fade from 'react-reveal/Fade';
 const Portfolio=()=>{
 
   const [data, setapiData] = useState([])
@@ -50,6 +50,7 @@ useEffect(() => {
         console.log("🚀 ~ file: portfolio.jsx ~ line 45 ~ obj", obj.language)
           
           return(
+            <Fade top cascade>
           <article className="portfolio_item">
           <div className="portfolio_item-image">
           <img src={IMG1} alt=""/>
@@ -64,6 +65,7 @@ useEffect(() => {
             <a href="https://dribbble.com/Alien_pixels" className="btn btn-primary" target='_blank'> Live Demo </a>
           </div>
         </article>
+        </Fade>
           )
         })}
 
