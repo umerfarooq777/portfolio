@@ -1,3 +1,55 @@
+@keyframes rotate {
+    from{ -webkit-transform: rotate(0deg);   }
+    to{   -webkit-transform: rotate(360deg); }
+  }
+  .parent {
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      position: relative;
+      top: 10%;
+      left: 0%;
+      border-top: 15px solid  var(--color-primary); 
+      border-right: 10px solid  transparent;
+      border-bottom: 15px solid  var(--color-primary);
+      border-left: 10px solid  transparent;
+      /* border: 15px solid  var(--color-primary); */
+      animation: rotate 10s linear infinite;
+  }
+  
+  .container{
+      position: relative;
+  }
+  
+  .child {
+      position: absolute;
+      top: 1rem;
+      left: -3.5rem;
+      color: #fff;
+      width: 30rem;
+      height: 30rem;
+      animation: none !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about-container {
     display: grid;
     grid-template-columns: 35% 50%;
@@ -10,23 +62,49 @@
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: linear-gradient(
+    /* background: linear-gradient(
     45deg,
     transparent,
     var(--color-primary),
     transparent
-    );
+    ); */
     display: grid;
     place-items: center; 
     transition: 1s;
-    border: 3px solid transparent;      
+    background: red; 
+    border-top: 10px solid  var(--color-primary); 
+    border-right: 10px solid  transparent;
+    border-bottom: 10px solid  var(--color-primary);
+    border-left: 10px solid  transparent;
+    /* background: red; */
+    z-index: -2;
+    /* animation: rotation 5s infinite linear;           */
     }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
 
-    .about-me-image img{
+
+      .about-me-image{
         /* overflow: hidden; */
         transform: rotate(15deg);
         border-radius: 40%;
-        transition: .85s;   
+        transition: .85s;
+        background: pink;
+    } 
+    .about-me-image img{
+        
+        /* transform: rotate(15deg); */
+        border-radius: 40%;
+        transition: .85s;
+        /* position: absolute;
+        left: 0;
+        right: 0;       */
     }  
     .about-me-image img:hover{
         transition: .5s;      
@@ -79,7 +157,7 @@
 
 
 /* ============================ MEDIA QUERIES (MEDIUM DEVICES) ================================== */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
     .about-container {
         grid-template-columns: 1fr;
         gap: 0;

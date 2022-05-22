@@ -20,11 +20,18 @@ const about = () => {
     <div className='about-container'>
 
        {/* My image div  */}
-      <div className="about-me">
+       
+      {/* <div className="about-me">
         <div className="about-me-image" >
           <img src={me_} alt='About Image'/>
         </div>
-      </div>
+        </div> */}
+        <div class="container">
+            <div class="parent"></div>
+            <div class="child"><img src={me_} alt='About Image'/></div>
+        </div>
+
+
 
        {/* My details div  */}
       <div className="about-content">
