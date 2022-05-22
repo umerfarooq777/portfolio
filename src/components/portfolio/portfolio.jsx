@@ -62,7 +62,7 @@ useEffect(() => {
             <p></p>
             </div>
             <a href={obj.html_url } className="btn" target='_blank'> Github </a>
-            <a href="https://dribbble.com/Alien_pixels" className="btn btn-primary" target='_blank'> Live Demo </a>
+            {/* <a href="https://dribbble.com/Alien_pixels" className="btn btn-primary" target='_blank'> Live Demo </a> */}
           </div>
         </article>
         </Fade>
@@ -75,7 +75,7 @@ useEffect(() => {
 
 
       </div>
-        <a className="load-more btn btn-primary" onClick={()=> setdatalength(datalength+3)}>more</a>
+        <a className="load-more btn btn-primary" onClick={()=> setdatalength(datalength+3)}>show more</a>
     </section>);
 }
 export default Portfolio;
