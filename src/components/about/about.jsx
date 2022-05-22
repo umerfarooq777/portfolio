@@ -26,9 +26,9 @@ const about = () => {
           <img src={me_} alt='About Image'/>
         </div>
         </div> */}
-        <div class="container-port">
-            <div class="parent"></div>
-            <div class="child"><img src={me_} alt='About Image'/></div>
+        <div className="container-port">
+            <div className="parent box"></div>
+            <div className="child box"><img className="child-img"src={me_} alt='About Image'/></div>
         </div>
 
 

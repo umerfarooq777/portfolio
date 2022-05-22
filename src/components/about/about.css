@@ -1,6 +1,6 @@
 @keyframes rotate {
-    from{ -webkit-transform: rotate(0deg);   }
-    to{   -webkit-transform: rotate(360deg); }
+    from{ transform: rotate(0deg);   }
+    to{   transform: rotate(360deg); }
   }
   .parent {
       width: 25rem;
@@ -15,13 +15,28 @@
       border-left: 15px solid  var(--color-bg-variant);
       /* border: 15px solid  var(--color-primary); */
       animation: rotate 10s linear infinite;
-  }
+      transition: 1s;
+  } 
+
+  /* .container-port .parent:hover,
+.container-port .parent:hover ~ .parent{
+    transition: .5s;
+  box-shadow:0 0 50px var(--color-primary);
+
+} */
+
+
+  .parent{
+      transition: .5s;
+    box-shadow:0 0 50px var(--color-primary);
+}
   
   .container-port{
       position: relative;
   }
   
   .child {
+      opacity: none;
       position: absolute;
       top: 1rem;
       left: -3.5rem;
@@ -30,7 +45,6 @@
       height: 30rem;
       animation: none !important;
   }
-
 
 
 
