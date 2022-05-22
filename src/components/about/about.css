@@ -10,14 +10,14 @@
       top: 10%;
       left: 0%;
       border-top: 15px solid  var(--color-primary); 
-      border-right: 10px solid  transparent;
+      border-right: 15px solid  var(--color-bg-variant);
       border-bottom: 15px solid  var(--color-primary);
-      border-left: 10px solid  transparent;
+      border-left: 15px solid  var(--color-bg-variant);
       /* border: 15px solid  var(--color-primary); */
       animation: rotate 10s linear infinite;
   }
   
-  .container{
+  .container-port{
       position: relative;
   }
   
