@@ -38,16 +38,18 @@
                 height: 100%;
                 }
                 .portfolio-item-detail{         
-                transition:.5s;  
+                transition:1s;  
+                padding:0 1.6rem;
                 }
                 .portfolio_item:hover .portfolio-item-detail{    
-                    margin: .25rem 2rem;
-                    transition:2s;
+                    /* margin: .25; */
+                    padding:0 1.6rem;
+                    transition:1s;
                 }
                 .portfolio_item .portfolio-item-detail a{ 
                     transition:.75s;
                     margin: 0 .5rem;
-                    padding: .25rem 1.25rem;
+                    padding: .25rem 1rem;
                     }
 
 .load-more{
