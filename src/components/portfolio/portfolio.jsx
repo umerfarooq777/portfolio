@@ -58,7 +58,7 @@ useEffect(() => {
           <div className="portfolio-item-detail">
             <h3>{obj.name}</h3>
             <div className=''>
-            <p>language : {obj.language}</p>
+            {/* <p>language : {obj.language}</p> */}
             <p></p>
             </div>
             <a href={obj.html_url } className="btn" target='_blank'> Github </a>
