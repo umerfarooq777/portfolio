@@ -14,7 +14,7 @@
       border-bottom: 15px solid  var(--color-primary);
       border-left: 15px solid  var(--color-bg-variant);
       /* border: 15px solid  var(--color-primary); */
-      animation: rotate 10s linear infinite;
+      animation: rotate 12s linear infinite;
       transition: 1s;
   } 
 
@@ -28,7 +28,7 @@
 
   .parent{
       transition: .5s;
-    box-shadow:0 0 50px var(--color-primary);
+    /* box-shadow:0 0 50px var(--color-primary); */
 }
   
   .container-port{
