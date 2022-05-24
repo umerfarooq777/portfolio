@@ -43,7 +43,7 @@ const experiance = () => {
                     <SiCss3 className='experience_details_icon'/>
                     <h4>CSS</h4>
                 </div>
-                <Progressbar level="80"/>
+                <Progressbar level="80" />
               </div>         
           </article>
           

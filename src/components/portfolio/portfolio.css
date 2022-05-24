@@ -58,4 +58,46 @@
 }
 
 
+/* ============================ MEDIA QUERIES (LARGE DEVICES) ================================== */
+@media screen and (max-width: 1500px) {
+    #portfolio{
+        margin-top: 60rem;
+}
+}
 
+/* ============================ MEDIA QUERIES (LARGE DEVICES) ================================== */
+@media screen and (max-width: 1200px) {
+    .portfolio_container{
+        grid-template-columns:1fr 1fr;
+        gap:1.2rem;
+       }
+}
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ================================== */
+@media screen and (max-width: 600px) {
+    .portfolio_container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:2rem;
+       }
+    #portfolio{
+        margin-top: 107rem;
+}
+.load-more{
+    margin: 2rem 0 6rem 35%;
+    padding: .25rem 1.5rem;
+}
+   
+}
+
+/* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ================================== */
+@media screen and (max-width: 400px) {
+    .portfolio_container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:2rem;
+       }
+       .load-more{
+           margin: 2rem 40% 6rem 30%;
+           padding: .25rem 1.5rem;
+       }
+}

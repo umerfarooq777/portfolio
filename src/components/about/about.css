@@ -171,10 +171,15 @@
 
 
 /* ============================ MEDIA QUERIES (MEDIUM DEVICES) ================================== */
-@media screen and (max-width: 1224px) {
+@media screen and (max-width: 1200px) {
     .about-container {
         grid-template-columns: 1fr;
         gap: 0;
+    }
+    .container-port{
+        margin: 0 auto;
+        top: -3rem;
+        left: 0;
     }
     .about{
         margin-top: 15rem;
@@ -223,6 +228,21 @@
     .about-me{
         width: 90%;
         margin: 2rem auto 4rem;
+        }
+        .parent{
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            position: relative;
+            top: 10%;
+            left: 0%;
+        }
+        .child{
+            width: 23rem;
+            height: 23rem;
+            left: 0%;
+            top: 1rem;
+            left: -2.25rem;
         }
 }
 
