@@ -19,10 +19,10 @@ function App() {
     <Cursor/>         
         <Header />
         <Navbar />
-        <About/>
+        <Fade bottom><About/></Fade>
+        <Fade bottom><Experiance/></Fade>
+        <Fade bottom><Portfolio/></Fade>        
         <Contact/>
-        <Experiance/>
-        <Fade left cascade><Portfolio/></Fade>
         <Footer/> 
         
      
