@@ -43,7 +43,7 @@
                 }
                 .portfolio_item:hover .portfolio-item-detail{    
                     /* margin: .25; */
-                    padding:0 1.6rem;
+                    padding:0 1.6rem 1rem 1.6rem;
                     transition:1s;
                 }
                 .portfolio_item .portfolio-item-detail a{ 
