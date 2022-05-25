@@ -10,8 +10,14 @@ import {SiBootstrap} from 'react-icons/si'
 import {SiReact} from 'react-icons/si'
 
 import ProgressBar from 'react-animated-progress-bar';
-import {ImHtmlFive2} from 'react-icons/im'
+import {GrNode} from 'react-icons/gr'
+import {SiMongodb} from 'react-icons/si'
+import {FaPhp} from 'react-icons/fa'
+import {GrMysql} from 'react-icons/gr'
+import {FaPython} from 'react-icons/fa'
 
+
+import { Fade } from 'react-reveal';
 
 const experiance = () => {
   return (
@@ -25,7 +31,7 @@ const experiance = () => {
         {/* FRONTEND */}
         <div className="experience_frontend">
         <h3>Frontend Development</h3>
-        <div className="experience_content">
+       <div className="experience_content">
           
           <article className='experience_details'>
               <div>
@@ -106,27 +112,27 @@ const experiance = () => {
           <article className='experience_details'>
               <div>
                 <div className='box'>
-                  <SiHtml5 className='experience_details_icon'/>
+                  <GrNode className='experience_details_icon'/>
                     <h4>Node JS</h4>
                 </div>
-                <Progressbar level="5"/>
+                <Progressbar level="35"/>
               </div>          
           </article>
           
           <article className='experience_details'>              
               <div>
                 <div className='box'>
-                    <SiCss3 className='experience_details_icon'/>
+                    <SiMongodb className='experience_details_icon'/>
                     <h4>MongoDB</h4>
                 </div>
-                <Progressbar level="5"/>
+                <Progressbar level="50"/>
               </div>         
           </article>
           
           <article className='experience_details'>
               <div>
                 <div className="box">
-                  <SiJavascript className='experience_details_icon'/>
+                  <FaPhp className='experience_details_icon'/>
                   <h4>PHP</h4>
                 </div>
                 <Progressbar level="30"/>
@@ -138,7 +144,7 @@ const experiance = () => {
           <article className='experience_details'>
               <div>
                 <div className="box">
-              <SiTailwindcss className='experience_details_icon'/>
+              <GrMysql className='experience_details_icon'/>
 
                 <h4>MySQL</h4>
                 </div>
@@ -149,7 +155,7 @@ const experiance = () => {
           <article className='experience_details'>
               <div>
                 <div className="box">
-              <SiBootstrap className='experience_details_icon'/>
+              <FaPython className='experience_details_icon'/>
 
                 <h4>Python</h4>
                 

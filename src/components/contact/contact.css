@@ -11,6 +11,8 @@
     gap:1.2rem;
    }
    .contact_option{
+       width: auto;
+       height: auto;
     background:transparent;
     padding:1.2rem;
     border-radius:1.2rem;
@@ -25,7 +27,7 @@
 }.contact_option:hover .contact_option_icon{
     font-size: 3.5em;
     transition: .75s;
-    animation: rotation .5s linear;   
+    animation: rotation .65s linear;   
 }
 
   @keyframes rotation {
@@ -51,7 +53,12 @@
     font-size:0.8rem;
 }
 
-
+#contact{
+    margin-top: 10rem;
+    margin-top: -22rem;
+    height: auto;
+    padding: 2rem;
+}
 
 /* ================= form =================*/
 
@@ -64,11 +71,67 @@ form{
    input,
 textarea{
  width:100%;
-  padding:1.5rem;
+  padding:1rem;
   border-radius:0.5em;
   background:transparent;
   border:2px solid var(--color-primary-variant);
   resize:none;
-  color: var(--color-white)
+  color: var(--color-white);
+  transition: .15s;
+}
+input:focus,
+textarea:focus{
+    margin-left: .75rem;
+    padding:1.75rem;
+    transition: .25s;
+  border:2px solid var(--color-primary-variant);
+  resize:none;
+  color: var(--color-white);
+  box-shadow: 0 0 .5rem var(--color-primary-variant);
+  /* background:var(--color-primary-variant); */
+}::placeholder {
+    color: var(--color-white);
+    opacity: 50%;
+  }
 
+  
+
+/* ============================ MEDIA QUERIES (LARGE DEVICES) ================================== */
+@media screen and (max-width: 1500px) {
+}
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ================================== */
+@media screen and (max-width: 1200px) {
+    .container.contact_container{
+        display:grid;
+        grid-template-columns:50% 50%;
+        gap:12%;
+       }
+
+    .contact_option{
+        width: 100%;
+        height: 100%;
+     transition: .75s;
+    }
+}
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ================================== */
+@media screen and (max-width: 800px) {
+    .container.contact_container{
+    display:grid;
+    grid-template-columns:100%;
+    gap:12%;
+   }
+   #contact{
+       height: auto;
+       width: auto;
+   }
+
+}
+/* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ================================== */
+@media screen and (max-width: 400px) {
+    .container.contact_container{
+    width:90%;
+    display:grid;
+    grid-template-columns:100%;
+    gap:12%;
+   }
 }

@@ -3,8 +3,32 @@ import "./contact.css"
 import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerFill} from 'react-icons/ri'
 import {ImWhatsapp} from 'react-icons/im'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
+import { Fade } from 'react-reveal'
+
+
+
 
 const contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_yo1ybm9', 'template_cvg0j9e', form.current, '4bU47aoER64yolJ2_')    
+      .then((result) => {
+          // console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
+
+
+
   return (
     <>
     <section id='contact'>
@@ -14,7 +38,7 @@ const contact = () => {
 
       
        {/*START OF CONTACT OPTIONS*/}
-       <div className="contact_options">
+       <Fade left cascade><div className="contact_options">
          <article className="contact_option">
            <MdOutlineEmail className="contact_option_icon"/>
             <h4>Email</h4>
@@ -33,16 +57,19 @@ const contact = () => {
             <h5>+92 310 0276796</h5>
             <a href="https://wa.me/+923100276796" target="_blank"> Send a message </a>
          </article>
-       </div>
+       </div></Fade>
        {/*END OF CONTACT OPTIONS*/}
 
        
-       <form action="">
-              <input type="text"name='name'placeholder='Your Full Name'required/>
+      
+         <form ref={form} onSubmit={sendEmail} autocomplete="off">
+              <input type="text"name='name'placeholder='Your Full Name' required />
+              <input type="text"name='subject'placeholder='Subject' required />
               <input type="email" name='email' placeholder='Your Email' required/>
               <textarea name="message" rows="7" placeholder="Your Message" required/>
               <button type='submit' className="btn btn-primary">Send Message</button>   
-       </form>
+       </form>       
+       
     </div>
   </section>
     </>

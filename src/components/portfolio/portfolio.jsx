@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const Portfolio=()=>{
 
   const [data, setapiData] = useState([])
-  const [datalength, setdatalength] = useState(3)
+  const [datalength, setdatalength] = useState(4)
 
   console.log("🚀 ~ file: portfolio.jsx ~ line 9 ~ Portfolio ~ data", data.length)
 
@@ -75,7 +75,7 @@ useEffect(() => {
 
 
       </div>
-        <a className="load-more btn btn-primary" onClick={()=> setdatalength(datalength+3)}>show more</a>
+        <a className="load-more btn btn-primary" onClick={()=> setdatalength(datalength+4)}>show more</a>
     </section>);
 }
 export default Portfolio;

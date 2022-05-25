@@ -4,6 +4,7 @@ import "./header.css"
 import TypeWriterEffect from 'react-typewriter-effect';
 import ME from "../../assets/image/me.png"
 import HeaderSocials from "./headerSocials"
+import { Fade } from 'react-reveal';
 
 const header = () => {
  
@@ -15,7 +16,7 @@ const header = () => {
     <header id='home'>
     <div className="container header_container">
       <h5>Hello I'm</h5>
-     <h1 className='myname'><span className='sym'>{data1}</span> UMER FAROOQ <span className='sym'>{data2}</span></h1>
+      <Fade top><h1 className='myname'><span className='sym'>{data1}</span> UMER FAROOQ <span className='sym'>{data2}</span></h1></Fade>
       {/* <p style={{display:inline-block}}>{data}</p><h1>{data1}</h1><p></p> */}
       <h5 className="text-light post">
    
@@ -42,12 +43,12 @@ const header = () => {
         typeSpeed={50}
       />
           </h5>
-      <CTA/>
+          <Fade top><CTA/></Fade>
       <HeaderSocials/>
       
-      <div className="me">
-         <img src={ME} alt="me" />
-       </div>
+      <Fade bottom><div className="me">
+      <Fade bottom delay={500}><img src={ME} alt="me" /></Fade>
+       </div></Fade>
 <a href="#contact" className='scroll_down'>Scroll Down </a>
 
 

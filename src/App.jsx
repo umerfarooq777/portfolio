@@ -22,8 +22,8 @@ function App() {
         <Fade bottom><About/></Fade>
         <Fade bottom><Experiance/></Fade>
         <Fade bottom><Portfolio/></Fade>        
-        <Contact/>
-        <Footer/> 
+        <Fade bottom><Contact/></Fade>
+        <Fade bottom><Footer/></Fade> 
         
      
     </div>
