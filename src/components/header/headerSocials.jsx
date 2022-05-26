@@ -7,16 +7,16 @@ import { FiTwitter } from "react-icons/fi";
 const HeaderSocials = () => {
   return (
     <div className="header_socials">
-      <a href="https://linkedin.com" target="_blank">
+      <a href="https://www.linkedin.com/in/umer-farooq-689685211/" target="_blank">
         <FiLinkedin />
       </a>
-      <a href="https://github.com" target="_blank">
+      <a href="https://github.com/umerfarooq777" target="_blank">
         <FiGithub />
       </a>
-      <a href="https://dribbble.com" target="_blank">
+      <a href="https://www.facebook.com/umer.pharooq" target="_blank">
         <FiFacebook />
       </a>
-      <a href="https://dribbble.com" target="_blank">
+      <a href="https://twitter.com/umerpharooq" target="_blank">
         <FiTwitter />
       </a>
     </div>
