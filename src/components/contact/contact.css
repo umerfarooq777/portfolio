@@ -89,11 +89,13 @@ textarea:focus{
   color: var(--color-white);
   box-shadow: 0 0 .5rem var(--color-primary-variant);
   /* background:var(--color-primary-variant); */
-}::placeholder {
-    color: var(--color-white);
-    opacity: 50%;
-  }
-
+}
+.label-text{
+    color: var(--color-primary);
+    padding: 0;
+    margin-bottom: 0;
+    font-size: .9rem;
+}
   
 
 /* ============================ MEDIA QUERIES (LARGE DEVICES) ================================== */

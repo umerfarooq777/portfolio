@@ -63,10 +63,14 @@ const contact = () => {
        
       
          <form ref={form} onSubmit={sendEmail} autocomplete="off">
+           <label className="label-text">Full Name :</label>
               <input type="text"name='name'placeholder='Your Full Name' required />
-              <input type="text"name='subject'placeholder='Subject' required />
+              <label className="label-text">Subject :</label>
+              <input type="text"name='subject'placeholder='Subject' required /> 
+              <label className="label-text">E-mail :</label>
               <input type="email" name='email' placeholder='Your Email' required/>
-              <textarea name="message" rows="7" placeholder="Your Message" required/>
+              <label className="label-text">Message :</label>
+              <textarea name="message" rows="5" placeholder="Your Message" required/>
               <button type='submit' className="btn btn-primary">Send Message</button>   
        </form>       
        
