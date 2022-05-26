@@ -18,7 +18,7 @@ const header = () => {
       <h5>Hello I'm</h5>
       <Fade top><h1 className='myname'><span className='sym'>{data1}</span> UMER FAROOQ <span className='sym'>{data2}</span></h1></Fade>
       {/* <p style={{display:inline-block}}>{data}</p><h1>{data1}</h1><p></p> */}
-      <h5 className="text-light post">
+      <h5 className="text-light post"> 
    
       <TypeWriterEffect
         textStyle={{

@@ -18,17 +18,10 @@
       transition: 1s;
   } 
 
-  /* .container-port .parent:hover,
-.container-port .parent:hover ~ .parent{
-    transition: .5s;
-  box-shadow:0 0 50px var(--color-primary);
-
-} */
-
 
   .parent{
       transition: .5s;
-    /* box-shadow:0 0 50px var(--color-primary); */
+    box-shadow:0 0 30px var(--color-primary);
 }
   
   .container-port{

@@ -57,12 +57,18 @@ footer{
 
    .footer_socials a:hover{
     font-size: 3em;
- color:var(--color-light);
+ /* color:var(--color-light); */
 }
 
 .footer_copyright{
     color: var(--color-light);
 }
+@keyframes rotate {
+    from{ transform: rotate(0deg);   }
+    to{   transform: rotate(360deg); }
+  }
+
+  
 
 /* ============================ MEDIA QUERIES (SMALL DEVICES) ================================== */
 @media screen and (max-width: 800px) {
