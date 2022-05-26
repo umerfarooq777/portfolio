@@ -35,9 +35,11 @@ const about = () => {
     <Fade right cascade><div className="about-content">
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem
-                maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi
-                amet repellat molestias quos totam.
+              I am an undergraduatesoftware 
+engineering student,web developer and 
+designer, with creative design ideas for 
+innovative and tech solutions.
+
                 </p>
 
 
@@ -47,15 +49,15 @@ const about = () => {
                   <FiUsers className="about-icon"/>
                   <h5>Clients</h5>
                   <small>
-                  <CountUp end={100} redraw={true} />
+                  <CountUp end={10} redraw={true} />
                   + World Wide
                   </small>
                 </div>
 
                 <div className="about-card">
                   <FiAward className="about-icon"/>
-                  <h5>Experiance</h5>
-                  <small><CountUp end={100} redraw={true}/>+ Years working</small>
+                  <h5>Experience</h5>
+                  <small><CountUp end={3} redraw={true}/>+ Years working</small>
                 </div>
 
               
