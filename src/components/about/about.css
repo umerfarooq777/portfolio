@@ -224,19 +224,18 @@
         margin: 2rem auto 4rem;
         }
         .parent{
-            width: 20rem;
-            height: 20rem;
+            width: 18rem;
+            height: 18rem;
             border-radius: 50%;
             position: relative;
             top: 10%;
             left: 0%;
         }
         .child{
-            width: 23rem;
-            height: 23rem;
-            left: 0%;
-            top: 1rem;
-            left: -2.25rem;
+            width: 20rem;
+            height: 20rem;
+            top: 1.25rem;
+            left: -1.75rem;
         }
 }
 

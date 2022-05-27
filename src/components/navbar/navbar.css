@@ -2,12 +2,12 @@ nav {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
-    padding: 0.25rem 1rem;
-    z-index: 2;
-    position: fixed!important;
+    padding: 0.25rem 2rem;
+    z-index: 9;
+    position: fixed;
     left: 50%;
+    bottom: 0.75rem;
     transform: translateX(-50%);
-    bottom: 0.5rem;
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
@@ -35,3 +35,13 @@ nav {
         font-size: 1.5rem;
         }
         
+/* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ================================== */
+@media screen and (max-width: 400px) {
+    nav {
+    position: fixed;
+    left: 50%;
+    bottom: 6rem;
+    backdrop-filter: blur(5px);
+    }
+   
+}
