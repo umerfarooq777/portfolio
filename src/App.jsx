@@ -17,7 +17,7 @@ function App() {
     
     <div className="App"> 
     <Cursor/>         
-        <Header />
+        <Header /> 
         <Navbar />
         <Fade bottom><About/></Fade>
         <Fade bottom><Experiance/></Fade>
