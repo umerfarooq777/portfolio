@@ -35,7 +35,7 @@ const about = () => {
     <Fade right cascade><div className="about-content">
 
               <p>
-              I am an undergraduatesoftware 
+              I am an undergraduate software 
 engineering student,web developer and 
 designer, with creative design ideas for 
 innovative and tech solutions.
